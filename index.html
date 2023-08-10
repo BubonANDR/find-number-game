@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Угадай число</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">Найдите число</h1>
+    </header>
+
+    <main class="main">
+      <section class="gamearea">
+        <div class="gameblock">
+          <div class="game-menu">
+            <p class="game-menu__title">ВРЕМЯ</p>
+            <p class="game-menu__title">УРОВЕНЬ</p>
+            <p class="game-menu__title">ОЧКИ</p>
+            <p class="game-menu__value timer"></p>
+            <p class="game-menu__value level">0</p>
+            <p class="game-menu__value score">0</p>
+          </div>
+
+          <div class="gameblock__task">
+            <p class="gameblock__task-text">Найдите указанное число:</p>
+            <p class="gameblock__task-number">86</p>
+          </div>
+
+          <div class="game-grid"></div>
+        </div>
+        <div class="gameblock ready">
+          <button type="button" class="button">Начнем!</button>
+        </div>
+      </section>
+      <p class="instuction-text">
+        На игровом поле будут появляться таблички с числами,<br />необходимо
+        найти табличку с числом,<br />указанным на карточке над игровым полем.
+      </p>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
